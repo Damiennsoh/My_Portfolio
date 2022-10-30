@@ -39,6 +39,15 @@ header {
   justify-content: space-between;
   flex-wrap: wrap;
   align-items: center;
-  background-color: var(--secondary);
+  background-color: var(--tertiary);
   box-shadow: 0 5px 35px rgba(179, 130, 25, 0.4);
+}
+
+header h1 {
+  color: var(--tertiary);
+  background-color: var(--secondary);
+  padding: 5px 1% 5px 6%;
+  margin: 0;
+  font-size: 4vw;
+  line-height: 1;
 }
