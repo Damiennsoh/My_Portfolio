@@ -13,7 +13,6 @@ This website is my personal portfolio that that you can use to view my works or 
 N/A
 
 ## license
-
 Please refer to the license document in the repository.
 
 Thank you.
