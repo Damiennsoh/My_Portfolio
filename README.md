@@ -12,7 +12,7 @@ This website is my personal portfolio that that you can use to view my works or 
 ## Credits
 N/A
 
-##license
+## license
 
 Please refer to the license document in the repository.
 
