@@ -15,6 +15,8 @@ body {
   margin: 0;
   padding: 0;
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  color: var(--primary);
+  background-color: var(--light);
   line-height: 1.5;
 }
 
@@ -25,14 +27,17 @@ h4,
 h5,
 h6 {
   margin: 0;
-  
+}
+
+h1 span{
+color: beige;
 }
 
 p {
-  margin: 1.5;
+  margin: 0;
 }
 
-header {
+header{
   padding: 15px 6% 15px 0;
   display: flex;
   flex-direction: row;
@@ -40,7 +45,7 @@ header {
   flex-wrap: wrap;
   align-items: center;
   background-color: var(--tertiary);
-  box-shadow: 0 5px 35px rgba(179, 130, 25, 0.4);
+  box-shadow: 0 5px 35px rgba(114, 98, 199, 0.4);
 }
 
 header h1 {
@@ -50,6 +55,7 @@ header h1 {
   margin: 0;
   font-size: 4vw;
   line-height: 1;
+
 }
 
 nav {
@@ -69,7 +75,6 @@ nav a {
   background-position: bottom;
   transition: all 0.25s ease-in;
   font-size: 1.4rem;
-  
 }
 
 nav a:hover {
@@ -86,10 +91,11 @@ main {
   margin-bottom: 45px;
 }
 
-.hero-banner {
-  background: rgb(51, 64, 124);
+.hero-banner{
+  background: rgb(68, 88, 120);
   background-image: url("../images/02-hero-bg.jpg"), linear-gradient(180deg, var(--secondary) 0%, var(--primary) 100%);
   background-size: cover;
+  background-position: center;
   background-blend-mode: soft-light;
   min-height: 30vh;
   color: var(--light);
@@ -104,9 +110,9 @@ main {
   flex: 0 0 90%;
 }
 
-.hero-banner h2 {
+.hero-banner h2{
   background-color: var(--secondary);
-  color: var(--tertiary);
+  color: blueviolet;
   margin: 0;
   padding: 5px 10px;
   font-size: 2.3rem;
@@ -173,8 +179,8 @@ main {
 
 /* feature first portfolio item */
 .flex-item:first-child {
-  min-height: 400px;
-  flex-basis: 100%;
+    min-height: 400px;
+    flex-basis: 100%;
 }
 
 .flex-item:hover {
@@ -213,10 +219,12 @@ main {
   display: inline-block;
 }
 
+
 .contact address a:hover {
   background-size: 100% 88%;
   color: var(--secondary);
 }
+
 
 /* portfolio project images */
 .run-buddy {
@@ -241,57 +249,9 @@ main {
 
 /* end portfolio project images */
 
-@media screen and (max-width: 980px) {
-  header {
-    padding: 0 0 10px 0;
-    justify-content: center;
-    text-align: center;
-  }
 
-  header h1 {
-    width: 100%;
-    padding: 5px;
-    margin-bottom: 10px;
-    font-size: 10vw;
-  }
 
-  header nav {
-    justify-content: center;
-  }
-
-  .page-section > h2,
-  .page-section > div {
-    flex: 0 0 100%;
-  }
-
-  .page-section > h2 {
-    border-right: none;
-    border-bottom: 4px solid var(--primary);
-    margin-bottom: 20px;
-    padding-bottom: 10px;
-    text-align: left;
-    font-size: 7vw;
-  }
-}
-
-@media screen and (max-width: 768px) {
-  .flex-item,
-  .flex-item:first-child {
-    flex-basis: 100%;
-  }
-
-  .flex-item:first-child {
-    min-height: 150px;
-  }
-
-  .hero-banner {
-    justify-content: center;
-    text-align: center;
-  }
-
-  .contact address {
-    flex-direction: column;
-    align-items: flex-start;
-    
-  }
+footer{
+  text-align: center;
+  color: blue;
 }
